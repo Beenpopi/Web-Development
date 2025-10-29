@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpop Space - All Products</title>
+    <link rel="stylesheet" href="/Header.css">
+    <link rel="stylesheet" href="/AllPro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img class="logos" src="/IMG_5349.jpg" alt="Web logo">
+            </div>
+            <div class="nav-buttons">
+                <a href="/SearchPage.html"><button class="nav-item">Search</button></a>
+                <a href="/HomePage.html"><button class="nav-item">HOME</button></a>
+                <a href="/teammember.html"><button class="nav-item">TEAM</button></a>
+                <a href="/AllPro.html"><button class="nav-item">PRODUCT</button></a>
+            </div>
+            <div class="user-controls">
+                <a href="/login.html"><i class="bi bi-person-circle"></i></a>
+                <a href="/AddEdit.html"><i class="bi bi-hammer"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container" id="product-container">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+
+
+    </main>
+
+    <script src="/Header.js"></script>
+    <script>
+        async function fetchProducts() {
+            try {
+                const response = await fetch('http://localhost:8003/api/products', {
+                    method: 'GET',
+                    credentials: 'include'
+                });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const products = await response.json();
+                renderProducts(products);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+                document.getElementById('product-container').innerHTML = '<p>Failed to load products.</p>';
+            }
+        }
+
+        function renderProducts(products) {
+            const container = document.getElementById('product-container');
+            container.innerHTML = ''; // Clear existing content
+            if (products.length === 0) {
+                container.innerHTML = '<p>No products available.</p>';
+                return;
+            }
+            products.forEach(product => {
+                const productCard = `
+                    <div class="product-card" onclick="window.location.href='/ProductDetail?product_id=${product.product_ID}'">
+                        <img src="${product.Product_Image}" alt="${product.Name}">
+                        <h3>${product.Name}<br><span class="price">${product.price} THB</span></h3>
+                        <button class="add-to-cart"><i class="bi bi-cart cart-icon"></i> Add to cart</button>
+                    </div>
+                `;
+                container.innerHTML += productCard;
+            });
+        }
+
+        // Fetch products when the page loads
+        window.onload = fetchProducts;
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: #FFF8E5;
+}
+
+
+.background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/Image/Background.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); 
+}
+
+.login-container {
+    position: relative;
+    background: rgba(255, 228, 232, 0.9);
+    padding: 27px;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #148B9C;
+}
+
+.login-container h3 {
+    font-size: 20px;
+    color: #148B9C;
+    margin-bottom: 10px;
+}
+
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    font-family: 'Montserrat';;
+    border: none;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+::placeholder {
+    color: #1496A4;
+    opacity: 10.2; 
+    font-size: medium;
+    font-family: 'Montserrat';
+  }
+
+
+ .button1 {
+    width: 100%;
+    padding: 12px;
+    background-color: #e57a92;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px #d1657e(0, 0, 0, 0.4);
+}
+
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1062px; 
+    margin: auto;
+    margin-top: 80px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #FFF8E5;
+}
+
+
+.background-image {
+    width: 100%;
+    height: auto; 
+    display: block;
+
+}
+
+
+.login-container {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#FCF0F0 ;
+    text-align: center;
+    width: 70%;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 10px;
+  }
+
+  .login-form.show {
+    max-height: 350px; 
+  }
+
+  .login-form input {
+    margin-bottom: 10px;
+    width: 94%;
+    padding: 8px;
+    border: 1px ;
+  }
+
+  
+
+  .button1 {
+    margin: 10px 0;
+    width: 94%;
+    padding: 10px;
+    background-color: #e57a92;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button1:hover {
+    background-color: #DB708B;
+  }
+
+    .button1:active {
+        background-color: #C2667E;
+        box-shadow: 0 1px 3px #C2667E(0, 0, 0, 0.4);
+        transform: scale(0.98);
+    }
+
+   .button2 {
+    margin: 10px 0;
+    width: 94%;
+    padding: 10px;
+    background-color: #6BBDAC;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  .button2:hover {
+    background-color: #5FA596;
+  }
+  .button2:active {
+    background-color: #4E8A7D;
+    box-shadow: inset 1px 3px #C2667E(0, 0, 0, 0.4);
+    transform: scale(0.98);
+  }
+
+  i{
+    color: white;
+    font-size: 19px;
+    font-style: normal;
+  }
+
+  .Pbtn{
+    margin: 10px 0;
+    width: 94%;
+    padding: 10px;
+    background-color: #e57a92;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -4px;
+  }
+
+  .Pbtn:hover {
+    background-color: #DB708B
+  }
+
+    .Pbtn:active {
+            background-color: #C2667E;
+            box-shadow: 0 1px 3px #C2667E(0, 0, 0, 0.4);
+            transform: scale(0.98);
+    }
+  
+  .Bbtn{
+    margin: 10px 0;
+    width: 94%;
+    padding: 10px;
+    background-color: #6BBDAC;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .Bbtn:hover {
+    background-color: #5FA596;
+  }
+  .Bbtn:active {
+    background-color: #4E8A7D;
+    box-shadow: inset 1px 3px #C2667E(0, 0, 0, 0.4);
+    transform: scale(0.98);
+  }
+
+.forgot {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #148B9C;
+    transition: color 0.3s;
+    margin-top: 3px; 
+    margin-left: 13px;
+    margin-bottom: 15px;
+  }
+
+    .forgot:hover {
+        color: #5EA697;
+        text-decoration: underline;
+        transition: color 0.3s;
+        cursor: pointer;
+    }
+    .forgot:active {
+            color: #4E8A7D;
+            text-decoration: underline;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+    .forgot2:hover {
+        color: #148B9C;
+        text-decoration: underline;
+        transition: color 0.3s;
+        cursor: pointer;
+        }   
+
+    .forgot2:active {
+            color: #4E8A7D;
+            text-decoration: underline;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+  .forgot2 {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #148B9C;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-top: 3px; 
+    margin-left: 13px;
+    margin-bottom: 5px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+.login-form {
+    display: none; /* Hide forms by default */
+}
+.login-form.show {
+    display: block; /* Show form when 'show' class is added */
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.modal-content h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+.modal-content p {
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.modal-content button:hover {
+    background-color: #45a049;
+}
+.modal.error .modal-content {
+    border: 2px solid red;
+}
+.modal.error button {
+    background-color: #f44336;
+}
+.modal.error button:hover {
+    background-color: #d32f2f;
+}
+
+.g-recaptcha{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
