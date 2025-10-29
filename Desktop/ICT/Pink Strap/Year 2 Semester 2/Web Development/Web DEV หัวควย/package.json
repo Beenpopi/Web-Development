@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "init": "^0.1.2",
+    "jsdom": "^26.0.0",
+    "nodemon": "^3.1.9"
+  },
+  "name": "kspace",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "POPI",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpop Space Navigation Bar</title>
+    <link rel="stylesheet" href="/Front-End/css/Header.css">
+    <link rel="stylesheet" href="/Front-End/css/ProductDetail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/Image/IMG_5349.jpg"  alt="Web logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" class="form-control" placeholder= 🔎> 
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-item">HOME</button>
+                <button class="nav-item"><a href="/Front-End/html/teammember.html">TEAM</button>
+                <button class="nav-item"><a href="/Front-End/html/ProductDetail.html">PRODUCT</button>
+            </div>
+            <div class="user-controls">
+                <i class="bi bi-headset"> </i>
+                <i class="bi bi-cart"> </i>
+            </div>
+        </nav>
+        
+    </header>
+    
+    
+    <main>
+        <section class="product">
+            <div class="product-image">
+                <img src="/Image/Armageddon.png" alt="Aespa The 1st Album Armageddon">
+            </div>
+            <div class="product-details">
+                <h1>The 1st Album [ Armageddon ] ( Poster Ver. )</h1>
+                <p class="detail"><span class="Tuana">LABEL</span>       SM ENTERTAINMENT</p>
+                <p class="detail"><span class="Tuana">ARTIST</span>      aespa</p>
+                <p class="detail"><span class="Tuana">RELEASE DATE</span> 24-02-2024</p>
+                <p class="detail"><span class="Tuana">TOTAL PRICE</span> 504.97 THB</p>
+                <div class="quantity-container">
+                    <button class="circle-btn-decrease" id="decrease">−</button>
+                    <input type="text" id="quantity" value="1" readonly>
+                    <button class="circle-btn-increase" id="increase">+</button>
+                </div>
+                <button class="order-btn">
+                    <span class="bi bi-cart"></span>
+                    ORDER
+                </button>
+                
+            </div>
+        </section>
+        
+        <section class="related-items">
+            <h2 class="line"> ________________</h2>
+            <h2 class="Related">RELATED ITEMS</h2>
+            
+            <!-- Optional scroll arrows -->
+            <div class="scroll-arrow left" id="scrollLeft">
+              <i class="bi bi-chevron-left"></i>
+            </div>
+            
+            <div class="related-list">
+              <div class="item">
+                <img src="/Image/Girls.png" alt="Girls 2nd Mini Album">
+                <p>Girls 2nd Mini Album (Real World Ver.)</p>
+              </div>
+              <div class="item">
+                <img src="/Image/Savage.png" alt="Savage 1st Mini Album">
+                <p>Savage 1st Mini Album (HALLUCINATION QUEST Ver.)</p>
+              </div>
+              <div class="item">
+                <img src="/Image/MY WORLD.png" alt="MY WORLD 3rd Mini Album">
+                <p>MY WORLD 3rd Mini Album (Intro Ver.)</p>
+              </div>
+            
+              <div class="item">
+                <img src="/Image/Armageddon.png" alt="Armageddon Album">
+                <p>Armageddon Album (Regular Ver.)</p>
+              </div>
+              <div class="item">
+                <img src="/Image/Girls.png" alt="Another Album">
+                <p>Another Album Example</p>
+              </div>
+            </div>
+            
+            <div class="scroll-arrow right" id="scrollRight">
+              <i class="bi bi-chevron-right"></i>
+            </div>
+          </section>
+    </main>
+<script src="/Front-End/js/InDeProduct.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;
+    background-color: #fdf9f6;
+}
+
+/* Background Grid */
+.background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('your-album-grid-image.jpg'); /* Replace with your album cover collage */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Light overlay effect */
+}
+
+/* Login Box */
+.login-container {
+    position: relative;
+    background: rgba(255, 228, 232, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #3d6b6b;
+}
+
+.login-container h3 {
+    font-size: 20px;
+    color: #3d6b6b;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+/* Login Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e57a92;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #d1657e;
+}
+/* Centering the image container */
+/* Move everything down to avoid the header */
+/* Move everything down to avoid the header */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Adjust based on your image size */
+    margin: auto;
+    margin-top: 80px; /* Lower the image (adjust based on header height) */
+}
+
+/* Fix the image compression issue */
+.background-image {
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio */
+    display: block;
+}
+
+/* Positioning the login box inside the image */
+.login-container {
+    position: absolute;
+    top: 50%; /* Lower the login box */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#FCF0F0 ;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
