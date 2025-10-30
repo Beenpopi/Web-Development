@@ -2,8 +2,7 @@
 
 ## Overview
 
-This project is a full-stack web application designed for managing K-pop
-products. It includes features to add, edit, and manage product details
+This project is a full-stack web application designed. It includes features to add, edit, and manage product details
 through an admin interface.
 
 ## Technologies Used
@@ -28,7 +27,7 @@ the client and server.
 
 ## Key Features
 
--   Add, edit, and delete K-pop products\
+-   Add, edit, and delete products\
 -   Image upload functionality using multer\
 -   Secure login with reCAPTCHA v2\
 -   Integration between front-end and back-end through REST APIs
