@@ -14,15 +14,15 @@ through an admin interface.
 
 ## Description
 
-For this project, I worked on both the **front-end** and **back-end**
+For this project, I worked on both the front-end and back-end
 parts.\
-- On the **front-end**, I used **HTML**, **CSS**, and **JavaScript** to
+- On the front-end, I used HTML, CSS, and JavaScript to
 create interactive and responsive pages for product management.\
-- On the **back-end**, I built the server using **Node.js** with
-**Express.js**, connecting it to a **MySQL** database to store and
+- On the back-end, I built the server using Node.js with
+Express.js, connecting it to a MySQL database to store and
 manage product data.\
-- I also implemented **API endpoints** for CRUD operations and tested
-them thoroughly using **POSTMAN** to ensure proper communication between
+- I also implemented API endpoints for CRUD operations and tested
+them thoroughly using POSTMAN to ensure proper communication between
 the client and server.
 
 ## Key Features
